@@ -7,9 +7,9 @@ class CardDeck {
     public denomination = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'],
     public suit = ['diams', 'hearts', 'clubs', 'spades'],
   ) {
-    for (let i = 0; i < denomination.length; i++) {
-      for (let k = 0; k < suit.length; k++) {
-        this.deck.push(new PlayCard(denomination[i], suit[k]))
+    for (let i = 0; i < suit.length; i++) {
+      for (let k = 0; k < denomination.length; k++) {
+        this.deck.push(new PlayCard(suit[i], denomination[k]))
 
       }
     }
