@@ -1,4 +1,5 @@
 import React from "react";
+import '../cards.css'
 
 interface CardProps {
   rank: string;
@@ -20,13 +21,20 @@ const Card: React.FC<CardProps> = props => {
     case 'spades':
       suit = '♠'
       break;
+    default:
+      break;
   }
 
+  const className = 'card rank-' + (props.rank.toLowerCase()) + ' ' + props.suit;
+
   return (
-    <span className="card rank-k diams">
-    <span className="rank">{props.rank}</span>
-    <span className="suit">{suit}</span>
-    </span>
+    <div className="playingCards faceImages">
+        <span className={className}>
+          <span className="rank">{props.rank}</span>
+          <span className="suit">{suit}</span>
+        </span>
+    </div>
+
   );
 
 }

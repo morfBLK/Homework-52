@@ -10,6 +10,7 @@ class CardDeck {
     for (let i = 0; i < denomination.length; i++) {
       for (let k = 0; k < suit.length; k++) {
         this.deck.push(new PlayCard(denomination[i], suit[k]))
+
       }
     }
   }
@@ -20,7 +21,7 @@ class CardDeck {
   }
 
   getCards(howMany: number) {
-    const cardMass:PlayCard[] = []
+    const cardMass = []
     for (let i = 0; i < howMany; i++) {
       cardMass.push(this.getCard());
     }
