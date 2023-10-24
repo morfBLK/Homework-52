@@ -9,7 +9,7 @@ class CardDeck {
   ) {
     for (let i = 0; i < suit.length; i++) {
       for (let k = 0; k < denomination.length; k++) {
-        this.deck.push(new PlayCard(suit[i], denomination[k]))
+        this.deck.push(new PlayCard(suit[i], denomination[k]));
 
       }
     }

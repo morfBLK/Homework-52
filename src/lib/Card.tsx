@@ -1,5 +1,5 @@
 import React from "react";
-import '../cards.css'
+import '../cards.css';
 
 interface CardProps {
   rank: string;
@@ -40,4 +40,4 @@ const Card: React.FC<CardProps> = props => {
 }
 
 
-export default Card;
+export default Card

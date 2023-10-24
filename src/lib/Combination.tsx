@@ -6,8 +6,8 @@ class Combination {
 
   getOutcome() {
     const pokerMass = this.poker;
-    let pairs = 0
-    let flash = 0
+    let pairs = 0;
+    let flash = 0;
 
     for (let i = 0; i < pokerMass.length; i++) {
       for (let k = 0; k < pokerMass.length; k++) {
